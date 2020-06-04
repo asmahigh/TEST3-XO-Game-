@@ -1,0 +1,72 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+E:\Test\Test.uvproj
+Project File Date:  06/04/2020
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling XO.c...
+compiling main.c...
+linking...
+Program Size: Code=5466 RO-data=4842 RW-data=168 ZI-data=1680  
+".\Test.axf" - 0 Error(s), 0 Warning(s).
+</pre>
+</body>
+</html>
+ortF_Init(void){
+XO.c(306): warning:  #12-D: parsing restarts here after previous syntax error
+        return StillPlaying;
+XO.c(7): warning:  #177-D: variable "grid" was declared but never referenced
+  const unsigned char grid[] ={
+XO.c(82): warning:  #177-D: variable "x" was declared but never referenced
+  const unsigned char x[] ={
+XO.c(94): warning:  #177-D: variable "o" was declared but never referenced
+  const unsigned char o[] ={
+XO.c(109): warning:  #177-D: variable "cursor" was declared but never referenced
+  const unsigned char cursor[] ={
+XO.c(120): warning:  #177-D: variable "xturn" was declared but never referenced
+  const unsigned char xturn[] ={
+XO.c(132): warning:  #177-D: variable "oturn" was declared but never referenced
+  const unsigned char oturn[] ={
+XO.c(145): warning:  #177-D: variable "empty" was declared but never referenced
+  const unsigned char empty[] ={
+XO.c(158): warning:  #177-D: variable "empty_cells" was declared but never referenced
+  char empty_cells;
+XO.c(159): warning:  #177-D: variable "cell_no" was declared but never referenced
+  char cell_no;
+XO.c(160): warning:  #177-D: variable "turn" was declared but never referenced
+  char turn;                                                                                            // X if 1, O if 2 (X always begins)
+XO.c(161): warning:  #177-D: variable "winner" was declared but never referenced
+  char winner= -1;
+XO.c(164): warning:  #177-D: variable "CellsArray" was declared but never referenced
+  struct Cell CellsArray[9];
+XO.c(165): warning:  #177-D: variable "CellsArray" was declared but never referenced
+  struct Cell CellsArray[9]= {
+XO.c(310): error:  #247: function "ShowScore" has already been defined
+  void ShowScore(void){
+XO.c(311): error:  #20: identifier "winner" is undefined
+                                if (winner == tie) {
+XO.c: 14 warnings, 4 errors
+compiling main.c...
+main.c(13): error:  #65: expected a ";"
+  int main(void){
+main.c(34): warning:  #12-D: parsing restarts here after previous syntax error
+                        while(still_pressing_to_move_left);
+main.c(37): error:  #169: expected a declaration
+                else if (press_to_play) {
+main.c(49): warning:  #12-D: parsing restarts here after previous syntax error
+                winner = FindWinner();
+main.c(50): error:  #169: expected a declaration
+                if (winner != StillPlaying) {
+main.c(65): warning:  #12-D: parsing restarts here after previous syntax error
+                while (!(GPIO_PORTF_DATA_R&0x10) || !(GPIO_PORTF_DATA_R&0x01));
+main.c(66): error:  #169: expected a declaration
+        }
+main.c(68): warning: At end of source:  #12-D: parsing restarts here after previous syntax error
+main.c: 4 warnings, 4 errors
+".\Test.axf" - 8 Error(s), 18 Warning(s).
+Target not created
+Error: Could not load file 'E:\Test\Test.axf'. Debugger aborted !
